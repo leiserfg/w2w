@@ -1,0 +1,5 @@
+- JOB: intercept -g $DEVNODE | /etc/interception/w2w | uinput -c /etc/interception/mouse.yaml
+  DEVICE:
+    NAME: HUION Huion Tablet Touch Ring
+    EVENTS:
+      EV_ABS: [[ABS_WHEEL]]
