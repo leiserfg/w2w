@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function build {
+    cc -o w2w w2w.c
+}
+
+function install {
+    sudo cp ./mouse.yaml w2w /etc/interception/
+    sudo cp ./huion.yaml w2w /etc/interception/udevmon.d/
+}
+
+function help {
+    echo "$0 <task> <args>"
+    echo "Tasks:"
+    compgen -A function | cat -n
+}
+
+TIMEFORMAT="Task completed in %3lR"
+time ${@:-help}
