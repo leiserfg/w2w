@@ -6,7 +6,7 @@ function build {
 
 function install {
     sudo cp ./mouse.yaml w2w /etc/interception/
-    sudo cp ./huion.yaml w2w /etc/interception/udevmon.d/
+    sudo cp ./huion.yaml /etc/interception/udevmon.d/
 }
 
 function help {

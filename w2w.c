@@ -33,7 +33,7 @@ void write_scroll(const int steps) {
                            high_res_event = {.type = EV_REL,
                                              .code = REL_WHEEL_HI_RES,
                                              .value = steps * 120};
-  write_event(&low_res_event);
+  // write_event(&low_res_event);
   write_event(&high_res_event);
 }
 const int RING_SIZE = 12;
