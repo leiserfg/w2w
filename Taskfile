@@ -1,7 +1,8 @@
 #!/bin/bash
 
 function build {
-    cc -o w2w w2w.c
+    cc -O3 -o w2w w2w.c
+    strip w2w
 }
 
 function install {
